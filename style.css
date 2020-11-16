@@ -45,7 +45,7 @@ body {
 /* bagian header */
 
 #header {
-    background-image: url(header.jpg);
+    background-image: url(images/header.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 630px;
