@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: poppins, calibri, sans-serif;
+    font-size: 12pt;
+    background-color: #f1f1f1;
+}
+
+#container {
+    max-width: 1080px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+
+/* bagian logo dan menu navigasi */
+
+#topnav {
+    width: 100%;
+    height: 50px;
+    line-height: 40px;
+    background: white;
+}
+
+#logo {
+    width: 25%;
+    float: left;
+    font-weight: bold;
+    font-size: 16pt;
+    color: #605FA8;
+    margin: 5px 15px;
+}
+
+#navigasi {
+    width: 58%;
+    float: right;
+    text-align: right;
+    margin: 5px 15px;
+}
+
+
+/* bagian header */
+
+#header {
+    background-image: url(header.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 630px;
+    margin-left: 15px;
+}
+
+.konten-header {
+    padding-top: 15%;
+}
+
+.paragraf-header {
+    width: 35%;
+    font-size: 11pt;
+    text-align: justify;
+    color: darkgray;
+}
+
+#header h1 {
+    font-size: 34pt;
+    line-height: 24pt;
+    color: #605FA8;
+}
+
+#header h2 {
+    font-weight: normal;
+    letter-spacing: 5pt;
+    color: rgb(240, 186, 86);
+    font-size: 18pt;
+}
+
+#header button {
+    padding: 8px 18px;
+    border-radius: 50px;
+    background: #605FA8;
+    color: white;
+    font-size: 9pt;
+    border: 0;
+}
+
+#header button:hover {
+    color: #605FA8;
+    background: white;
+    border: 1px solid #605FA8;
+}
+
+
+/* bagian deskripsi singkat */
+
+#shortdesc {
+    width: 100%;
+    background-color: #605FA8;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#shortdesc h1 {
+    color: white;
+    font-size: 40pt;
+    text-align: center;
+    padding-top: 40px;
+    font-family: century gothic;
+    font-weight: bolder;
+}
+
+.garis {
+    border: 2px solid white;
+    width: 10%;
+    margin-bottom: 30px;
+}
+
+
+/* Clear Float */
+
+#rapi {
+    clear: both;
+}
+
+
+/* Css Menu Navigasi */
+
+nav{
+    width:100%;
+    height:30px;
+    line-height: 30px;
+}
+nav ul{
+    list-style: none;    
+}
+nav ul li a{
+    text-decoration: none;
+    float:left;
+    width:120px;
+    text-align: center;
+    color: rgb(48, 48, 48);
+    font-size: 10pt;
+}
+nav ul li a:hover{
+  background-color: #605FA8;
+  color:white;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+nav ul li:hover ul{
+  display: block;
+  transition: delay 2s;
+}
+nav ul li ul{
+  display: none;
+  position:absolute;
+  top:35px;
+  left:890px;
+  background-color: #605FA8;
+  padding-left:10pt;
+}
+nav ul li ul li a{
+  width:235px;
+  height:35px;
+  display:block;
+  text-align: left;
+  color:white;
+}
+nav ul li ul li a:hover{
+    font-weight: bold;
+}
+
