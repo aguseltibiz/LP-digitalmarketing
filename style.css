@@ -21,14 +21,14 @@ body {
 #header {
     background-image: url(images/header.jpg);
     background-size: cover;
-    height: 600px;
+    height: 500px;
     padding: 15px;
     width: 80%;
     margin: 0 auto;
 }
 
 .konten-header {
-    padding-top: 15%;
+    padding-top: 13%;
 }
 
 .paragraf-header {
@@ -103,63 +103,12 @@ body {
 }
 
 
-/* Css Menu Navigasi */
-
-
-/* nav {
-    width: 100%;
-    height: 30px;
-    line-height: 30px;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li a {
-    text-decoration: none;
-    float: left;
-    width: 120px;
-    text-align: center;
-    color: rgb(48, 48, 48);
-    font-size: 10pt;
-}
-
-nav ul li a:hover {
-    background-color: #605FA8;
-    color: white;
-    font-weight: bold;
-    transition: all 0.5s;
-}
-
-nav ul li:hover ul {
-    display: block;
-    transition: delay 2s;
-}
-
-nav ul li ul {
-    display: none;
-    position: absolute;
-    top: 35px;
-    left: 890px;
-    background-color: #605FA8;
-    padding-left: 10pt;
-}
-
-nav ul li ul li a {
-    width: 235px;
-    height: 35px;
-    display: block;
-    text-align: left;
-    color: white;
-}
-
-nav ul li ul li a:hover {
-    font-weight: bold;
-} */
-
 
 /* Bagian Menu Navigasi */
+#topnav{
+    z-index: 999999;
+    position: relative;
+}
 
 a {
     text-decoration: none;
@@ -274,9 +223,22 @@ nav {
     background-color: rgb(54, 54, 54);
 }
 
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+/
 
 /* 
-responsive dibawah 800px
+UKURAN LAYAR SMARTPHONE DAN TABLET
 */
 
 @media screen and (max-width:800px) {
@@ -317,5 +279,36 @@ responsive dibawah 800px
     .menu ul li ul li {
         width: 100%;
         background: none !important;
+    }
+    #header{
+        height:600px;
+        background-image: url(images/headermini.jpg);
+        background-size: 85%;
+        background-position-x: center;
+        background-position-y: top;
+        background-repeat: no-repeat;
+        background-color: white;
+        width:100%;
+        margin: 0 auto;
+        margin-top: 52px;
+        padding-left:0;
+        padding-right:0;
+    }
+    .konten-header{
+        margin-top:265px;
+
+    }
+    .konten-header h1, h2{
+        text-align: center;
+    }
+    .paragraf-header{
+        width:95%;
+    }
+    #container{
+        overflow-x: hidden;
+    }
+    .konten-header button{
+        position: relative;
+        left:40%;
     }
 }
