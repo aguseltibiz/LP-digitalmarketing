@@ -141,7 +141,7 @@ nav {
 }
 
 .title a:hover {
-    color: #CDDC39;
+    color: #605FA8;
 }
 
 
@@ -309,6 +309,6 @@ UKURAN LAYAR SMARTPHONE DAN TABLET
     }
     .konten-header button{
         position: relative;
-        left:40%;
+        left:38%;
     }
 }
