@@ -302,7 +302,8 @@ UKURAN LAYAR SMARTPHONE DAN TABLET
         text-align: center;
     }
     .paragraf-header{
-        width:95%;
+        width:93%;
+        margin:0 auto;
     }
     #container{
         overflow-x: hidden;
