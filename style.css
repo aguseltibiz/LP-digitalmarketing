@@ -10,42 +10,9 @@ body {
 }
 
 #container {
-    max-width: 1080px;
-    margin: 0 auto;
-    background-color: white;
-}
-
-
-/* bagian logo dan menu navigasi */
-
-#topnav {
     width: 100%;
-    height: 50px;
-    line-height: 40px;
-    background: white;
-}
-
-#logo {
-    width: 25%;
-    float: left;
-    font-weight: bold;
-    font-size: 16pt;
-    color: #605FA8;
-    margin: 5px 15px;
-}
-#logo a{
-    text-decoration: none;
-}
-#logo a:hover{
-    color: #7776c9;
-    transition: all 0.5s;
-}
-
-#navigasi {
-    width: 58%;
-    float: right;
-    text-align: right;
-    margin: 5px 15px;
+    margin: 0 auto;
+    background-color: #f1f1f1;
 }
 
 
@@ -53,10 +20,11 @@ body {
 
 #header {
     background-image: url(images/header.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 630px;
-    margin-left: 15px;
+    background-size: cover;
+    height: 600px;
+    padding: 15px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .konten-header {
@@ -102,10 +70,14 @@ body {
 /* bagian deskripsi singkat */
 
 #shortdesc {
-    width: 100%;
+    width: 80%;
     background-color: #605FA8;
     text-align: center;
-    padding-bottom: 50px;
+    margin: 0 auto;
+    padding: 15px;
+    /* position: relative;
+    bottom: 50px; */
+    margin-top: 0px;
 }
 
 #shortdesc h1 {
@@ -133,48 +105,217 @@ body {
 
 /* Css Menu Navigasi */
 
-nav{
-    width:100%;
-    height:30px;
+
+/* nav {
+    width: 100%;
+    height: 30px;
     line-height: 30px;
 }
-nav ul{
-    list-style: none;    
+
+nav ul {
+    list-style: none;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
-    float:left;
-    width:120px;
+    float: left;
+    width: 120px;
     text-align: center;
     color: rgb(48, 48, 48);
     font-size: 10pt;
 }
-nav ul li a:hover{
-  background-color: #605FA8;
-  color:white;
-  font-weight: bold;
-  transition: all 0.5s;
-}
-nav ul li:hover ul{
-  display: block;
-  transition: delay 2s;
-}
-nav ul li ul{
-  display: none;
-  position:absolute;
-  top:35px;
-  left:890px;
-  background-color: #605FA8;
-  padding-left:10pt;
-}
-nav ul li ul li a{
-  width:235px;
-  height:35px;
-  display:block;
-  text-align: left;
-  color:white;
-}
-nav ul li ul li a:hover{
+
+nav ul li a:hover {
+    background-color: #605FA8;
+    color: white;
     font-weight: bold;
+    transition: all 0.5s;
 }
 
+nav ul li:hover ul {
+    display: block;
+    transition: delay 2s;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 890px;
+    background-color: #605FA8;
+    padding-left: 10pt;
+}
+
+nav ul li ul li a {
+    width: 235px;
+    height: 35px;
+    display: block;
+    text-align: left;
+    color: white;
+}
+
+nav ul li ul li a:hover {
+    font-weight: bold;
+} */
+
+
+/* Bagian Menu Navigasi */
+
+a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+a:hover {
+    transition: 0.3s;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(54, 54, 54);
+}
+
+
+/* Bagian Title */
+
+.title {
+    display: inline-block;
+    float: left;
+    line-height: 50px;
+    color: white;
+    margin-left: 140px;
+}
+
+.title a:hover {
+    color: #CDDC39;
+}
+
+
+/* Bagian Menu Box */
+
+.tblmenubox {
+    display: inline-block;
+    float: right;
+    line-height: 50px;
+}
+
+.tblmenu {
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url(nav-icon.png);
+    right: 50px;
+    top: 15px;
+    transform: translatey(-20%);
+}
+
+.tblmenubox {
+    display: none;
+    visibility: hidden;
+}
+
+
+/* Bagian Menu Navigasi */
+
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 999;
+}
+
+.menu {
+    display: inline-block;
+    float: right;
+    margin-right: 140px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    padding: 0 20px;
+    display: block;
+    line-height: 50px;
+}
+
+.menu li:hover {
+    background-color: #605FA8;
+}
+
+
+/* Menu dropdown */
+
+.menu li:hover ul {
+    display: block;
+}
+
+.menu ul li ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+}
+
+.menu ul li ul li {
+    width: 250px;
+    background-color: rgb(54, 54, 54);
+}
+
+
+/* 
+responsive dibawah 800px
+*/
+
+@media screen and (max-width:800px) {
+    .title {
+        margin-left: 10%;
+    }
+    .menu {
+        display: none;
+    }
+    .tblmenubox {
+        display: block;
+        visibility: visible;
+    }
+    .menu.sh {
+        display: block;
+        position: absolute;
+        top: 50px;
+        background: #605FA8;
+        width: 100%;
+        left: 0;
+    }
+    .menu a:hover {
+        color: #fff;
+        background: #353535;
+    }
+    .menu ul li {
+        display: block;
+        text-align: center;
+    }
+    .menu ul li ul {
+        display: none;
+        position: relative;
+        top: 0px;
+    }
+    .menu ul li:hover ul {
+        display: block;
+    }
+    .menu ul li ul li {
+        width: 100%;
+        background: none !important;
+    }
+}

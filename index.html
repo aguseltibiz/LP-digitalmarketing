@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <title>Home | LP Digital Marketing</title>
 </head>
 
@@ -14,35 +16,46 @@
     <div id="container">
         <!-- Bagian Logo dan Menu -->
         <div id="topnav">
-            <div id="logo">
-                <a href="index.html">ELTI PROJECT</a>
-            </div>
+            <nav>
+                <div class="wrap">
+                    <div class="title">
+                        <a href="#"><i class="fa fa-home"></i> &nbsp; ELTIBIZ</a>
+                    </div>
 
-            <div id="navigasi">
+                    <div class="tblmenubox">
+                        <div class="togel tblmenu">
 
-                <!-- Menu Navigasi -->
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Major &nbsp; <i class="fa fa-sort-down"></i></a>
-                            <ul>
-                                <li><a href="#">Computer Accounting</a></li>
-                                <li><a href="#">Office Administration</a></li>
-                                <li><a href="#">Computer Informatics Computer</a></li>
-                                <li><a href="#">IT Support</a></li>
-                            </ul>
-                        </li>
-                        </li>
-                        <li><a href="#">Online Register</a></li>
-                    </ul>
-                </nav>
+                        </div>
+                    </div>
 
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Service &nbsp; <i class="fa fa-sort-desc"></i></a>
+                                <ul>
+                                    <li><a href="#">Branding</a></li>
+                                    <li><a href="#">Design Specialist</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Fitur</a></li>
+                            <li><a href="#">Maps</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
-            </div>
-            <div id="rapi"></div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+            <script type="text/javascript">
+                $(".togel.tblmenu").click(function() {
+                    $(".menu").toggleClass("sh");
+                });
+            </script>
+
         </div>
+
+        <div id="rapi"></div>
 
         <!-- Bagian Header -->
         <div id="header">
@@ -50,9 +63,7 @@
                 <h1>DIGITAL</h1>
                 <h2>MARKETING AGENCY</h2> <br>
                 <p class="paragraf-header">
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
-                    professor at Hampden-Sydney College in Virginia
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia
                 </p><br>
                 <button>LEARN MORE</button>
             </div>
@@ -71,7 +82,6 @@
             <div id="shortdesc-4"></div>
 
         </div>
-    </div>
     </div>
 
 </body>
