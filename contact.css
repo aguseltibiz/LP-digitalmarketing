@@ -72,22 +72,12 @@ body {
 
 #shortdesc {
     width: 80%;
-    background-color: #605FA8;
-    text-align: center;
+    background-color: white;
     margin: 0 auto;
     padding: 15px;
     /* position: relative;
     bottom: 50px; */
     margin-top: 0px;
-}
-
-#shortdesc h1 {
-    color: white;
-    font-size: 40pt;
-    text-align: center;
-    padding-top: 40px;
-    font-family: century gothic;
-    font-weight: bolder;
 }
 
 .garis {
@@ -225,6 +215,94 @@ nav {
 }
 
 
+/* Style Form Contact */
+
+#container-form {
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 15px 20px;
+}
+
+#container-form h2 {
+    text-align: center;
+    color: #605FA8;
+    text-transform: uppercase;
+    font-size: 24pt;
+}
+
+form {
+    margin-top: 50px;
+}
+
+input[type=text],
+input[type=email],
+input[type=date],
+select,
+textarea {
+    width: 100%;
+    height: 35px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #dadada;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=submit] {
+    width: 100px;
+    height: 30px;
+    background-color: #605FA8;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    float: right;
+    margin-top: 20px;
+}
+
+input:focus {
+    background-color: #605FA8;
+    color: white;
+}
+
+textarea:focus {
+    background-color: #605FA8;
+    color: white;
+}
+
+select:focus {
+    background-color: #605FA8;
+    color: white;
+}
+
+input[type=submit]:hover {
+    color: #605FA8;
+    background-color: white;
+    border: 1px solid #605FA8;
+}
+
+.judul {
+    width: 25%;
+    float: left;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.box {
+    width: 75%;
+    float: left;
+    margin-top: 20px;
+}
+
+.baris:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
 /* Bagian Footer */
 
 #footer {
@@ -340,7 +418,7 @@ UKURAN LAYAR SMARTPHONE DAN TABLET
         padding-right: 0;
     }
     .konten-header {
-        margin-top: 205px;
+        margin-top: 245px;
     }
     .konten-header h1,
     h2 {
@@ -357,7 +435,22 @@ UKURAN LAYAR SMARTPHONE DAN TABLET
         position: relative;
         left: 38%;
     }
-    #shortdesc{
+    .judul,
+    .box,
+    input[type=submit] {
+        float: none;
+        width: 100%;
+    }
+    input[type=submit] {
+        height: 40px;
+    }
+    #container-form {
+        width: 100%;
+    }
+    #header h2{
+        font-size: 14pt;
+    }
+    #shortdesc {
         width: 100%;
     }
     #footer-left, #footer-right{

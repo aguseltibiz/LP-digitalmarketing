@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home | LP Digital Marketing</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <!-- Bagian Logo dan Menu -->
+        <div id="topnav">
+            <nav>
+                <div class="wrap">
+                    <div class="title">
+                        <a href="index.html"><i class="fa fa-home"></i> &nbsp; ELTIHOUSE</a>
+                    </div>
+
+                    <div class="tblmenubox">
+                        <div class="togel tblmenu">
+
+                        </div>
+                    </div>
+
+                    <div class="menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Service &nbsp; <i class="fa fa-sort-desc"></i></a>
+                                <ul>
+                                    <li><a href="#">Branding</a></li>
+                                    <li><a href="#">Design Specialist</a></li>
+                                    <li><a href="#">Web Developer</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Feature</a></li>
+                            <li><a href="#">Maps</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+            <script type="text/javascript">
+                $(".togel.tblmenu").click(function () {
+                    $(".menu").toggleClass("sh");
+                });
+            </script>
+
+        </div>
+
+        <div id="rapi"></div>
+
+        <!-- Bagian Header -->
+        <div id="header">
+            <div class="konten-header">
+                <h1>DIGITAL</h1>
+                <h2>MARKETING AGENCY</h2> <br>
+                <p class="paragraf-header">
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                    professor at Hampden-Sydney College in Virginia
+                </p><br>
+                <button>LEARN MORE</button>
+            </div>
+        </div>
+
+        <!-- Bagian Deskripsi Singkat -->
+        <div id="shortdesc">
+
+            <!-- Awal Contact Form -->
+
+            <div id="container-form">
+                <h2>Registration Form</h2>
+                <form>
+                    <!-- Form Nama Awal -->
+                    <div class="baris">
+                        <div class="judul">
+                            <label for="firstname">Nama Depan</label>
+                        </div>
+                        <div class="box">
+                            <input type="text" name="firstname" id="firstname" placeholder="Your First Name..">
+                        </div>
+                    </div>
+
+                    <!-- Form Nama Akhir -->
+                    <div class="baris">
+                        <div class="judul">
+                            <label for="lastname">Nama Belakang</label>
+                        </div>
+                        <div class="box">
+                            <input type="text" name="lastname" id="lastname" placeholder="Your Last Name..">
+                        </div>
+                    </div>
+
+                    <!-- Form Tempat Lahir -->
+                    <div class="baris">
+                        <div class="judul">
+                            <label for="placeofbirth">Tempat Lahir</label>
+                        </div>
+                        <div class="box">
+                            <input type="text" name="placeofbirth" id="placeofbirth" placeholder="Place of Birth..">
+                        </div>
+                    </div>
+
+                    <!-- Form Tanggal Lahir -->
+                    <div class="baris">
+                        <div class="judul">
+                            <label for="dateofbirth">Tanggal Lahir</label>
+                        </div>
+                        <div class="box">
+                            <input type="date" name="dateofbirth" id="dateofbirth" placeholder="Date of Birth..">
+                        </div>
+                    </div>
+
+                    <!-- Form Jenis Kelamin -->
+                    <div class="baris">
+                        <div class="judul">
+                            <label for="gender">Jenis Kelamin</label>
+                        </div>
+                        <div class="box">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Laki-laki</label><br>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Perempuan</label>
+                        </div>
+                    </div>
+
+                    <!-- Form Pilih Kota -->
+                    <div class="baris">
+                        <div class="judul">
+                            <label for="city">Asal Kota</label>
+                        </div>
+                        <div class="box">
+                            <select name="city" id="city">
+                                <option value="Blank">Pilih Kota</option>
+                                <option value="Banjarmasin">Banjarmasin</option>
+                                <option value="Banjarbaru">Banjarbaru</option>
+                                <option value="Martapura">Martapura</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <!-- Form alamat -->
+                    <div class="baris">
+                        <div class="judul">
+                            <label for="address">Alamat</label>
+                        </div>
+                        <div class="box">
+                            <textarea name="address" id="address" rows="10" placeholder="Your Adress.."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Form Email -->
+                    <div class="baris">
+                        <div class="judul">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="box">
+                            <input type="email" name="email" id="email" placeholder="Your Email..">
+                        </div>
+                    </div>
+
+                    <!-- Form Button -->
+                    <div class="baris">
+                        <input type="submit" value="SUBMIT">
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- Akhir Contact Form -->
+
+        </div>
+
+        <div id="footer">
+            <div id="footer-left">
+                Copyright &copy; 2020 by <a href="#">ELTIHOUSE</a>
+            </div>
+            <div id="footer-right">
+                <a href="#"> <i class="fa fa-facebook"></i> </a> &nbsp; &nbsp; &nbsp;
+                <a href="#"> <i class="fa fa-instagram"></i> </a> &nbsp; &nbsp; &nbsp;
+                <a href="#"> <i class="fa fa-twitter"></i></a>
+            </div>
+            <div id="rapi" style="clear:both"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
